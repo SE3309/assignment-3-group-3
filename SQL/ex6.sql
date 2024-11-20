@@ -2,17 +2,19 @@
 USE restaurant_schema;
 
 -- QUESTION 6 query 1: Insert calculated expenses for reservations with headcount greater than 5
-INSERT INTO Expense (adminID, expenseAmount, date, type, description)
-SELECT 
-    1,  -- Assign the expense to adminID 1
-    headCount * 10.00 AS expenseAmount,  -- Calculate expense as $10.00 per person for the reservation
-    date,  -- Use the reservation date as the expense date
-    'Reservation Expense',  -- Set the type of expense
-    CONCAT('Headcount: ', headCount)  -- Add a description with the headcount
-FROM Reservation
-WHERE headCount > 5;
+-- INSERT INTO Expense (adminID, expenseAmount, date, type, description)
+-- SELECT 
+--     1,  -- Assign the expense to adminID 1
+--     headCount * 10.00 AS expenseAmount,  -- Calculate expense as $10.00 per person for the reservation
+--     date,  -- Use the reservation date as the expense date
+--     'Reservation Expense',  -- Set the type of expense
+--     CONCAT('Headcount: ', headCount)  -- Add a description with the headcount
+-- FROM Reservation
+-- WHERE headCount > 5;
 -- This query calculates and logs expenses in the Expense table for reservations where the headcount exceeds 5.
 -- It uses a SELECT statement within the INSERT to dynamically calculate the expense amount and description.
+
+SET SQL_SAFE_UPDATES = 0;
 
 -- QUESTION 6 query 2: Update wages for staff members with the job title 'Server'
 UPDATE Staff

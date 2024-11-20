@@ -35,7 +35,6 @@ VALUES
 INSERT INTO OrderDetail (customerOrderID, menuID, quantity)
 VALUES
 (1, 1, 2),  -- Order ID 1 includes 2 units of menu item 1 (e.g., "Dish 1")
-(1, 2, 1),  -- Order ID 1 includes 1 unit of menu item 2 (e.g., "Dish 2")
 (2, 1, 3);  -- Order ID 2 includes 3 units of menu item 1 (e.g., "Dish 1")
 
 -- Insert additional orders into the OrderDetail table for menuID 1
@@ -47,5 +46,12 @@ VALUES
 (7, 1, 2),  -- Order ID 7 includes 2 units of menu item 1
 (8, 1, 2),  -- Order ID 8 includes 2 units of menu item 1
 (9, 1, 2),  -- Order ID 9 includes 2 units of menu item 1
-(10, 1, 2), -- Order ID 10 includes 2 units of menu item 1
-(11, 1, 2); -- Order ID 11 includes 2 units of menu item 1
+(10, 2, 2), -- Order ID 10 includes 2 units of menu item 1
+(11, 2, 2), -- Order ID 11 includes 2 units of menu item 1
+(12, 2, 1),  -- Order ID 5 includes 1 unit of menu item 1
+(13, 2, 2),  -- Order ID 6 includes 2 units of menu item 1
+(14, 2, 2),  -- Order ID 7 includes 2 units of menu item 1
+(15, 2, 2),  -- Order ID 8 includes 2 units of menu item 1
+(16, 2, 2),  -- Order ID 9 includes 2 units of menu item 1
+(17, 2, 2), -- Order ID 10 includes 2 units of menu item 1
+(18, 2, 2); -- Order ID 11 includes 2 units of menu item 1

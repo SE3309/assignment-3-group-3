@@ -8,7 +8,7 @@ fake = Faker()
 connection = mysql.connector.connect(
     host='localhost',
     user='root',
-    password='Turnberry123',
+    password='UR-PASSWORD', # Modify this
     database='restaurant_schema'
 )
 
